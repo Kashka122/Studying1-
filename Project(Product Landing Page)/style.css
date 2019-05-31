@@ -1,0 +1,155 @@
+body {
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    
+}
+#header {
+    position: fixed;
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 10;
+    top: 0px;
+}
+
+#header-img {
+    max-width: 300px;
+    max-height: 56px;
+}
+nav{
+    width: 100%; 
+}
+ul {
+    list-style: none;
+    width: auto;
+    text-align: right;
+    padding-left: 0px;
+}
+nav li{
+    margin:0px 15px;
+font-size: 1.3em;
+}
+li {
+    display: inline;
+    margin-right: 10px;
+}
+#features img{
+    float: left;
+    max-width: 75px;
+    height: 75px;
+    margin: 15px;
+}
+#features div{
+    float: left;
+    margin: 20px 0px;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#container {
+    max-width: 1000px;
+    position: relative;
+    top: 50px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    margin: 5px;
+    padding: 2px 5px;
+}
+#email{
+    width: 250px;
+    height: 25px;
+}
+.btn {
+    border-width: 0px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(247, 198, 39);
+    font-weight: bold;
+    cursor: pointer;
+}
+#pricing {
+    margin-top: 20px;
+}
+.price {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 800;
+}
+#pricing div{
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 32%;
+    display: inline-block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5px;
+}
+#pricing .btn:hover{
+background-color:orange;
+
+}
+h3 {
+    background-color: lightgray;
+    margin: 0px;
+    padding: 19px 0px;
+}
+footer {
+    text-align: right;
+    background-color: lightgray;
+    padding: 5px 0 ;
+    
+}
+footer li  {
+    margin: 5px 15px 0px 10px;
+    padding: 5px;
+}
+.copyright {
+    margin: 0px 10px 5px 10px; 
+    color: rgb(70, 68, 68);
+}
+
+/* screen size*/
+@media (max-width: 800px) {
+    #pricing div {
+        display: block;
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    nav li {
+        display: block;
+        font-size: 16px;
+        margin: 2px 0px;
+    }
+    nav ul{ 
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        display: block;
+    }
+    #container{
+        top: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    #features img {
+        display: none;
+    }
+    #features div {
+        text-align: center;
+    }
+}
