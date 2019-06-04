@@ -1,0 +1,150 @@
+body {
+margin: 0px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+}
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgb(184, 183, 183);
+}
+#navbar ul {
+    list-style: none;
+    text-align: right;
+}
+#navbar li {
+    display: inline;
+    margin: 0px 40px;
+}
+.nav-link {
+    text-decoration: none;
+    color: rgb(119, 119, 119);  
+}
+.nav-link:hover{
+    color: green;
+}
+#welcome-section{
+    padding-top: 45vh;
+    min-height: 55vh;
+   background-color:  rgb(184, 183, 183);
+}
+h1{
+    margin-bottom: 0px;
+}
+#welcome-section p {
+    color: green;
+    margin-top: 0px
+}
+#projects img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: -5px;
+}
+.project-tile , #contact a{
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    display: inline-block; 
+    margin: 50px;
+    
+}
+h2{
+    margin: 50px;
+}
+
+#projects img, #projects div {
+    border: 2px solid skyblue;
+    padding: 2px;
+}
+.show-all {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgb(11, 44, 94);
+    font-size: 18px;
+    padding: 5px;
+    background-color: yellowgreen;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 100px;
+}
+.show-all:hover{
+    background-color: skyblue;
+}
+#contact {
+    background-color: rgb(207, 243, 152);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+#contact h2{
+    margin-bottom: 0px;
+}
+#contact p{
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+#contact a{
+    background-color: rgb(196, 196, 196);
+    width: 100px;
+    height: 100px;
+    border: 2px solid brown;
+    border-radius: 100%;
+    line-height: 100px;
+}
+#contact a:hover {
+    background-color: rgb(226, 226, 226);
+}
+footer {
+    background-color: rgb(60, 31, 87);
+    color: white;
+}
+footer a {
+    color: white;
+}
+.line1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+.line2 {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+/*Screen size*/
+@media only screen and (max-width: 500px) {
+    #navbar ul {
+        text-align: center;
+        padding: 0px;
+    }
+    .project-tile , #contact a{
+        margin: 40px;
+    }
+    .show-all {
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #navbar li{
+        margin: 0px 20px;
+    }
+    .project-tile , #contact a{
+        margin: 30px;
+    }
+    #contact{
+        padding: 30px 0px;
+    }
+    #contact p {
+        margin-bottom: 50px;
+    }
+    #contact a{
+        background-color: rgb(196, 196, 196);
+        width: 100px;
+        height: 30px;
+        border: 2px solid brown;
+        border-radius: 0%;
+        line-height: 30px; 
+        margin: 15px;
+    }
+}
